@@ -135,6 +135,7 @@ Tittle: Explore the Insight of Survival rate of Titanic Passengers</h1>
 <h1 id="project-description">Project Description</h1>
 <p><a
 href="https://drive.google.com/file/d/18T76pbT6-ornJncvPO4Jb5CKccTgZy3u/view?usp=sharing">Click-here</a></p>
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/Titanic%20sinking.jpg" /></p>
 <h1 id="project-asking">Project Asking: </h1>
 <p> <strong>What was the survival rate of men and women?</strong></p>
 <ul>
