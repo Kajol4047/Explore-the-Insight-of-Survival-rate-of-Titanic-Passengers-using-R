@@ -135,6 +135,7 @@ Tittle: Explore the Insight of Survival rate of Titanic Passengers</h1>
 <h1 id="project-description">Project Description</h1>
 <p><a
 href="https://drive.google.com/file/d/18T76pbT6-ornJncvPO4Jb5CKccTgZy3u/view?usp=sharing">Click-here</a></p>
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/Titanic%20sinking.jpg" /></p>
 <h1 id="project-asking">Project Asking: </h1>
 <p> <strong>What was the survival rate of men and women?</strong></p>
 <ul>
@@ -206,7 +207,7 @@ complete data.csv")</p>
 <p>missmap(titanic,col=c("red","green"))</p>
 <p>sum(is.na(titanic))</p>
 </blockquote>
-<p><img src="media/image1.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/images/missingness%20map%20with%20code.jpg?raw=true"
 style="width:7.54839in;height:2.52143in" /></p>
 <ul>
 <li><p><strong>There are 3869 missing values in multiple columns of the
@@ -214,7 +215,7 @@ dataset which is 21% of total data.</strong></p></li>
 </ul>
 <h2 id="significance-of-missing-values">Significance of missing
 values:</h2>
-<p><img src="media/image2.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/missingness%20map.jpg"
 style="width:4.95487in;height:2.48194in" /></p>
 <p>The significance of missing values can be assessed by looking at the
 proportion of missing data in each column. From the map, we can
@@ -325,7 +326,7 @@ a look at the missingness map:</strong></p>
 <blockquote>
 <p>missmap(titanic,col=c("red","green"))</p>
 </blockquote>
-<p><img src="media/image3.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/handled%20na%20missingness%20map.jpg"
 style="width:6.27672in;height:3.92636in" /></p>
 <h1 id="outlier-analysis">Outlier Analysis:</h1>
 <h2 id="identifying-outliers">Identifying outliers</h2>
@@ -337,9 +338,9 @@ style="width:6.27672in;height:3.92636in" /></p>
 <p>&gt; boxplot(titanic$sibsp,main="boxplot of sibsp")</p>
 <p>&gt; boxplot(titanic$parch,main="boxplot of parch")</p>
 <p><strong>output</strong></p>
-<p><img src="media/image4.jpeg"
-style="width:1.78442in;height:3.1503in" /><img src="media/image5.png"
-style="width:4.18501in;height:3.06528in" /><img src="media/image6.jpeg"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/boxplot%20of%20age.jpg"
+style="width:1.78442in;height:3.1503in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/boxplot%20of%20fare%20and%20sibsp.jpg"
+style="width:4.18501in;height:3.06528in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/boxplot%20of%20parch.jpg"
 style="width:5.62932in;height:3.24375in" /></p>
 </blockquote>
 <ul>
@@ -399,7 +400,7 @@ questions:</p>
 survival rate?</em></p>
 <ul>
 <li><p><strong>Action:</strong> Retain the outliers since older
-passengers may provide valuable insights into survival trends.</p></li>
+passengers may provide valuable insights into survival trends.For this analysis we may categorized age into four category as child,youth,adult and senior which shown in Relationship Analysis step.</p></li>
 </ul></li>
 </ul>
 <h3 id="fare-1">Fare</h3>
@@ -426,7 +427,7 @@ information related to survival.</p></li>
 <p>titanic$fare_group &lt;-
 cut(titanic$fare,breaks=c(0,10,20,50,100,Inf),labels=c("lowest","lower
 middle","upper middle","higher","highest"),right=TRUE)</p>
-<p><img src="media/image7.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20fare%20group.jpg"
 style="width:6.45841in;height:0.77322in" /></p>
 </blockquote>
 <h3 id="parch-and-sibsp-number-of-siblingsspouses-aboard">Parch and
@@ -501,8 +502,8 @@ aboard)</p></li>
 <p>titanic$sibsp_group&lt;-cut(titanic$sibsp,breaks =
 c(-1,0,2,4,Inf),labels=c("none","small","medium","large"),right=TRUE)</p>
 <p>check the distribution of the new grouped variable:</p>
-<p><img src="media/image8.png"
-style="width:2.99107in;height:0.78592in" /><img src="media/image9.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20parch%20group.jpg"
+style="width:2.99107in;height:0.78592in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20sibsp%20group.jpg"
 style="width:3.02682in;height:0.7453in" /></p>
 <h1 id="step-2-descriptive-analysis"><br />
 <u>Step-2: Descriptive Analysis</u></h1>
@@ -511,7 +512,7 @@ style="width:3.02682in;height:0.7453in" /></p>
 <blockquote>
 <p># Generate summary statistics for numerical variables</p>
 <p>summary(titanic[, sapply(titanic, is.numeric)])</p>
-<p><img src="media/image10.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20summary%20statistics.jpg"
 style="width:5.86471in;height:2.20936in" /></p>
 </blockquote>
 <p><span id="_Toc185326767" class="anchor"></span><strong>Summary of Key
@@ -638,9 +639,9 @@ passengers did not travel with parents/children.</p></li>
 <p>table(titanic$parch_group)</p>
 <p>table(titanic$sibsp_group)</p>
 <p><strong>Output</strong></p>
-<p><img src="media/image11.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table1%20of%20categorized%20variable.jpg?raw=true"
 style="width:3.21229in;height:3.61071in" /></p>
-<p><img src="media/image12.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table2%20of%20categorized%20variable.jpg?raw=true"
 style="width:5.3989in;height:4.98929in" /></p>
 </blockquote>
 <h2 id="visual-distribution-of-data">Visual Distribution of Data<br />
@@ -648,22 +649,22 @@ style="width:5.3989in;height:4.98929in" /></p>
 <h3 id="age-2">Age</h3>
 <p>&gt; hist(titanic$age, main = "Histogram of Age", xlab = "Age", col =
 "lightblue", breaks = 20)</p>
-<p><img src="media/image13.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/histogram%20of%20age.jpg?raw=true"
 style="width:3.96677in;height:3.23872in" /></p>
 <p>#density of age</p>
 <p>plot(density(titanic$age, na.rm = TRUE), main = "Density Plot of
 Age", xlab = "age", col = "blue")</p>
-<p><img src="media/image14.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/desity%20plot%20of%20age.jpg?raw=true"
 style="width:5.10128in;height:2.94085in" /></p>
 <h3 id="fare-2">Fare</h3>
 <p>hist(titanic$fare, main = "Fare Distribution", xlab = "Fare", col =
 "orange", breaks = 20)</p>
-<p><img src="media/image15.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/histogram%20of%20fare.jpg?raw=true"
 style="width:4.32619in;height:3.16487in" /></p>
 <p>#Log Transformation Histogram: since fare is heavily skewed</p>
 <p>hist(log1p(titanic$fare), main = "Log Transformed Fare Distribution",
 xlab = "Log(Fare)", col = "purple", breaks = 20)</p>
-<p><img src="media/image16.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/histogram%20of%20logtransfromed%20fare.jpg?raw=true"
 style="width:3.81399in;height:2.79016in" /></p>
 <p><strong>#faregroup</strong></p>
 <p>barplot(table(titanic$fare_group), main = "Fare distribution
@@ -674,9 +675,9 @@ c("cyan"))</p>
 <p>pie(table(titanic$fare_group),main="pie chart of Fare
 class",col=c("pink",
 "lightblue","cyan","green","magenta"),labels=paste0(names(table(titanic$fare_group)),"(",percentagefare,"%)"))</p>
-<p><img src="media/image17.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20fare.jpg?raw=true"
 style="width:3.49082in;height:2.59385in" /></p>
-<p><img src="media/image18.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/pie%20chart%20of%20fare%20class.jpg?raw=true"
 style="width:3.42242in;height:2.775in" /></p>
 <h3
 id="sibsp-number-of-siblingsspouses-aboard-and-parch-number-of-parentschildren-aboard">sibsp
@@ -696,11 +697,11 @@ siblings/spouses",col=c("pink",
 <p>pie(table(titanic$parch_group),main="pie chart of
 parents/children",col=c("pink",
 "lightblue","orange","cyan"),labels=paste0(names(table(titanic$parch_group)),"(",percentageparch,"%)"))</p>
-<p><img src="media/image19.png"
-style="width:3.47576in;height:2.80595in" /><img src="media/image20.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20sibsp.jpg?raw=true"
+style="width:3.47576in;height:2.80595in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20parch.jpg?raw=true"
 style="width:3.18435in;height:2.84093in" /></p>
-<p><img src="media/image21.png"
-style="width:2.84338in;height:2.06716in" /><img src="media/image22.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/pie%20chart%20of%20sibsp.jpg?raw=true"
+style="width:2.84338in;height:2.06716in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/pie%20chart%20of%20parch.jpg?raw=true"
 style="width:3.49785in;height:2.11319in" /></p>
 <h3 id="sex">Sex</h3>
 <p>percentage=round( (100*table(titanic$sex))/sum(table(titanic$sex)),1
@@ -709,8 +710,8 @@ style="width:3.49785in;height:2.11319in" /></p>
 Gender",labels=paste0(names(table(titanic$sex)),"(",percentage,"%)"))</p>
 <p>barplot(table(titanic$sex), main = "Gender Distribution", xlab =
 "Gender", ylab = "Frequency", col = c("pink", "lightblue"))</p>
-<p><img src="media/image23.png"
-style="width:2.76097in;height:2.37924in" /><img src="media/image24.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/pie%20chart%20of%20gender.jpg?raw=true"
+style="width:2.76097in;height:2.37924in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20gender.jpg?raw=true"
 style="width:3.69071in;height:2.35486in" /></p>
 <h3 id="pclass">Pclass</h3>
 <p>barplot(table(titanic$pclass), main = "passenger class Distribution",
@@ -719,8 +720,8 @@ col = c("cyan"))</p>
 <p>pie(table(titanic$pclass),main="pie chart of Passenger
 class",col=c("pink",
 "lightblue","cyan"),labels=paste0(names(table(titanic$pclass)),"(",percentagepclass,"%)"))</p>
-<p><img src="media/image25.png"
-style="width:3.23081in;height:2.40198in" /><img src="media/image26.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20pclass.jpg?raw=true"
+style="width:3.23081in;height:2.40198in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/pie%20chart%20of%20pclass.jpg?raw=true"
 style="width:3.38378in;height:2.40744in" /></p>
 <h3 id="embarked">Embarked</h3>
 <p>barplot(table(titanic$embarked), main = "emberk Distribution", xlab
@@ -730,17 +731,17 @@ style="width:3.38378in;height:2.40744in" /></p>
 <p>pie(table(titanic$embarked),main="pie chart of embarked
 port",col=c("pink",
 "magenta","cyan"),labels=paste0(names(table(titanic$embarked)),"(",percentageembarked,"%)"))</p>
-<p><img src="media/image27.png"
-style="width:3.36845in;height:3.06956in" /><img src="media/image28.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20embarked%20port.jpg?raw=true"
+style="width:3.36845in;height:3.06956in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/pie%20chart%20of%20embarked%20port.jpg?raw=true"
 style="width:3.24949in;height:3.08929in" /></p>
 <h3 id="cabin_deck">Cabin_deck</h3>
 <p>barplot(table(titanic$cabin_deck), main = "Cabin distribution ", xlab
 = "Cabin", ylab = "Frequency", col = c("cyan"))</p>
 <p>percentagecanin=round(
 (100*table(titanic$cabin_deck))/sum(table(titanic$cabin_deck)),1 )</p>
-<p><img src="media/image29.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20cabin%20deck.jpg?raw=true"
 style="width:4.22041in;height:2.80357in" /></p>
-<p><img src="media/image30.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20cabin%25.jpg?raw=true"
 style="width:6.42739in;height:1.23631in" /></p>
 <h3 id="survived">Survived</h3>
 <p>barplot(table(titanic$survived), main = "survival overview ", xlab =
@@ -749,8 +750,8 @@ style="width:6.42739in;height:1.23631in" /></p>
 (100*table(titanic$survived))/sum(table(titanic$survived)),1 )</p>
 <p>pie(table(titanic$survived),main="survived or
 died",col=c("red","green"),labels=paste0(names(table(titanic$survived)),"(",percentagesurvived,"%)"))</p>
-<p><img src="media/image31.png"
-style="width:3.52008in;height:2.69286in" /><img src="media/image32.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20survival.jpg?raw=true"
+style="width:3.52008in;height:2.69286in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/pie%20chart%20of%20survival.jpg?raw=true"
 style="width:2.65in;height:2.68542in" /></p>
 <h1 id="step-3-relationship-analysis"><u>Step-3: Relationship
 Analysis</u></h1>
@@ -777,13 +778,13 @@ plot</p>
 legend position</p>
 <p>)</p>
 <p><strong>output</strong></p>
-<p><img src="media/image33.png"
-style="width:2.27281in;height:1.92845in" /><img src="media/image34.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20survival%20vs%20gender.jpg?raw=true"
+style="width:2.27281in;height:1.92845in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20survival%20vs%20gender.jpg?raw=true"
 style="width:3.7431in;height:3.26071in" /></p>
 <p><strong><u>#chi-square test to check signification of association
 between sex and survival</u></strong></p>
 <p>chisq.test(table_sex_survival)</p>
-<p><img src="media/image35.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/chi-square%20test%20of%20survival%20vs%20gender.jpg?raw=true"
 style="width:7.26806in;height:1.39306in" /></p>
 <p>The chi-square test evaluates whether there is a significant
 association between <strong>gender</strong> and <strong>survival
@@ -830,14 +831,14 @@ Class",ylab = "Survival Rate %",ylim = c(0, 100),legend
 =c("no","yes"),args.legend = list(title = "Survived", x = "topright",
 cex = 0.8))</p>
 <p><strong>output</strong></p>
-<p><img src="media/image36.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20survival%20vs%20pclass.jpg?raw=true"
 style="width:3.75044in;height:2.241in" /></p>
-<p><img src="media/image37.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20survival%20vs%20pclass.jpg?raw=true"
 style="width:4.01994in;height:2.67996in" /></p>
 <p><strong>#chi-square test to check significance of association between
 Pclass and survival</strong></p>
 <p>chisq.test(table_pclass_survival)</p>
-<p><img src="media/image38.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/chi-square%20test%20of%20survival%20vs%20pclass.jpg?raw=true"
 style="width:4.89209in;height:1.34178in" /></p>
 <p><strong>Interpretation:</strong></p>
 <ol type="1">
@@ -864,10 +865,10 @@ Rate %",ylim = c(0, 100),legend =c("no","yes"),args.legend = list(title
 = "Survived", x = "topright", cex = 0.8))</p>
 <p>&gt;chisq.test(table_embarked_survival)</p>
 <p><strong>Output</strong></p>
-<p><img src="media/image39.png"
-style="width:3.35029in;height:2.06685in" /><img src="media/image40.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20survival%20vs%20embarked%20port.jpg?raw=true"
+style="width:3.35029in;height:2.06685in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20survival%20vs%20embarked%20port.jpg?raw=true"
 style="width:3.16845in;height:2.35921in" /></p>
-<p><img src="media/image41.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/chi-square%20test%20of%20survival%20vs%20embarked.jpg?raw=true"
 style="width:5.23379in;height:1.37512in" /></p>
 <p><strong>Interpretation:</strong></p>
 <ol type="1">
@@ -900,9 +901,9 @@ prop_table_fare_survival&lt;-prop.table(table_fare_survival,2)*100</p>
 "Survived", x = "topright", cex = 0.8))</p>
 <p>&gt; chisq.test(table_fare_survival)</p>
 <p><strong>Output</strong></p>
-<p><img src="media/image42.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20survival%20vs%20fare.jpg?raw=true"
 style="width:3.43483in;height:1.95036in" /></p>
-<p><img src="media/image43.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20survival%20vs%20fare.jpg?raw=true"
 style="width:5.28941in;height:3.0881in" /></p>
 <p>Chi-squared Test Results for Fare Categories vs Survival</p>
 <ul>
@@ -941,12 +942,12 @@ prop_table_age_survival&lt;-prop.table(table_age_survival,2)*100</p>
 = c(0, 100),legend =c("no","yes"),args.legend = list(title = "Survived",
 x = "topright", cex = 0.8))</p>
 <p><strong>Output</strong></p>
-<p><img src="media/image44.png"
-style="width:3.43575in;height:1.90036in" /><img src="media/image45.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20survival%20vs%20age.jpg?raw=true"
+style="width:3.43575in;height:1.90036in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20survival%20vs%20age.jpg?raw=true"
 style="width:3.16873in;height:2.06071in" /></p>
 <p><strong># Fisher's Exact Test with Monte Carlo simulation (since not
 2by2 table)</strong></p>
-<p><img src="media/image46.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/fisher%20exact%20test%20of%20survival%20vs%20age.jpg?raw=true"
 style="width:5.82299in;height:1.23009in" /></p>
 <p><strong>Interpretation of Fisher's Exact Test for Age and
 Survival</strong></p>
@@ -989,15 +990,15 @@ cabin location",xlab="cabin location",ylab="% survival
 proportion",ylim=c(0,100),legend=c("no","yes"),args.legend =
 list(title="survived",x="topright",cex=0.8) )</p>
 <p><strong>output</strong></p>
-<p><img src="media/image47.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20survival%20vs%20cabin%20location.jpg?raw=true"
 style="width:3.85545in;height:2.21963in" /></p>
-<p><img src="media/image48.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20survival%20vs%20cabin%20location.jpg?raw=true"
 style="width:5.10417in;height:3.04583in" /></p>
 <p><strong># Fisher's Exact Test with Monte Carlo simulation (since not
 2by2 table)</strong></p>
 <p>fisher.test(table_cabin_survivl, simulate.p.value = TRUE, B =
 10000)</p>
-<p><img src="media/image49.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/fisher%20exact%20test%20of%20survival%20vs%20cabin%20location.jpg?raw=true"
 style="width:7.26806in;height:1.75694in" /></p>
 <p><strong>Conclusion:</strong></p>
 <p>Since the <strong>p-value</strong> (0.0001) is <strong>less than
@@ -1031,13 +1032,13 @@ status by Family Stutus",xlab="Family Stutus on Ship",ylab="% survival
 proportion",ylim=c(0,100),legend=c("no","yes"),args.legend =
 list(title="survived",x="topright",cex=0.8) )</p>
 <p><strong>output</strong></p>
-<p><img src="media/image50.png"
-style="width:3.06693in;height:2.10018in" /><img src="media/image51.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/table%20of%20survival%20vs%20family%20status.jpg?raw=true"
+style="width:3.06693in;height:2.10018in" /><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/barplot%20of%20survival%20vs%20family%20status.jpg?raw=true"
 style="width:3.52881in;height:2.90301in" /></p>
 <blockquote>
 <p><strong># Chi-Square Test</strong></p>
 <p>&gt; chisq.test(table_aloneornot_survival)</p>
-<p><img src="media/image52.png"
+<p><img src="https://github.com/Kajol4047/Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R/blob/main/chi-square%20test%20of%20survival%20vs%20family%20status.jpg?raw=true"
 style="width:6.29268in;height:1.40711in" /></p>
 <p><strong>Interpretation</strong></p>
 </blockquote>
