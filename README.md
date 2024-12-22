@@ -1,6 +1,6 @@
 # Explore-the-Insight-of-Survival-rate-of-Titanic-Passengers-using-R
 🛳️This project analyzes survival rates on the Titanic using R. Key factors explored include gender, passenger class, age, family status, fare, and cabin location. Statistical tests and visualizations uncover patterns, reflecting societal norms and inequalities of the era.
-<h1 class="TOC-Heading" id="table-of-constents">Table of Constents</h1>
+<h1 class="TOC-Heading" id="table-of-contents">Table of Contents</h1>
 <p><a href="#what-is-eda">What is EDA? <span>3</span></a></p>
 <p><a
 href="#project-tittle-explore-the-insight-of-survival-rate-of-titanic-passengers">Project
